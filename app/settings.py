@@ -7,7 +7,7 @@ class Config():
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
-    DB_FILE = os.environ.get('RAPID_DB_FILE', '')
+    DB_FILE = os.environ.get('RPCM_DB_FILE', '')
     SQLALCHEMY_DATABASE_URI = 'sqlite:///{0}'.format(DB_FILE)
 
 
